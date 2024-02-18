@@ -1,0 +1,252 @@
+
+header a {
+    text-decoration: none;
+    align-items: center;  /* Vertical centering */
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    margin-top: 10px;
+    display: block;
+    padding: 10px 10px;
+    background-color: hsl(0, 0%, 100%);
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    right: 3%;
+    top: 3%;
+
+}
+
+header a:hover {
+    background-color: #ffe4e4;
+}
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    overflow-y: scroll;
+    height: 100vh; /* Výška na 100% obrazovky */
+}
+header {
+    background-color: transparent; /* Průhledné pozadí */
+    color: rgba(255, 255, 255, 0);
+    text-align: center;
+    padding: 1em;
+    position: fixed;
+    width: 100%;
+    display: flex;
+}
+main {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center bottom; /* Ofset pro spodní část pozadí */
+    background-attachment: scroll; /* Obrázek se bude pohybovat při scrollování */
+    padding: 120px 20px 20px; /* Zvýšil jsem horní padding, aby byl obsah oddělen od hlavičky */
+    height: 271%; /* Výška na 200% obrazovky */
+    box-sizing: border-box;
+    
+}
+main {
+
+    padding-top: 80px; /* Adjust the top padding to leave space for the fixed header */
+}
+.recipe-filter {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px; /* Zvýšení odstupu od shora */
+}
+.recipes {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+}
+footer {
+    background-color: #2c3e5000;
+    color: white;
+    text-align: center;
+    padding: 0.1em;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+header {
+    /* existing styles */
+    position: fixed;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Align title and toggle button */
+    
+}
+
+.square-button {
+    text-align: block;
+    width: 260px;
+    height: 430px;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: rgb(0, 0, 0);
+    padding-left: 600px;
+    padding-right: 600px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    cursor: default;
+    
+}
+
+.square-button img {
+    width: 300px;
+    height: 300px;
+    border-radius: 5px;
+    position: relative;
+    top: -16%; /* Adjust the top position */
+    left: -220%; /* Center the image horizontally */
+}
+
+.square-button p {
+    text-align: block;
+    margin-top: -8px;
+    font-size: 14px;
+    border-radius: 5px;
+    position: relative;
+    top: -7%; /* Adjust the top position */
+    left: -210%; /* Center the image horizontally */
+}
+
+.square-button h1 {
+    text-align: center;
+    margin-top: -15px;
+    font-size: 12px;
+    position: relative;
+    top: -8%; /* Adjust the top position */
+    left: -210%; /* Center the image horizontally */
+}
+
+.square-button h2 {
+    text-align: center;
+    margin-top: 1px;
+    font-size: 18px;
+    position: relative;
+    top: -10%; /* Adjust the top position */
+    left: -210%; /* Center the image horizontally */
+}
+.square-button p1 {
+    
+    display: block;
+    text-align: left;
+    margin-top: 1px;
+    font-size: 20px;
+    position: relative;
+    top: -120%; /* Adjust the top position */
+    left: -20%; /* Center the image horizontally */
+    width: 300%; /* Adjust the width as needed */
+
+}
+.square-button1 {
+    margin-top: 5%;
+    margin-left: 11%;
+}
+
+
+@media screen and (max-width: 765px) {
+main {
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: 100% 100%;
+    background-attachment: fixed; /* Keep the background fixed */
+    padding: 0;
+    min-height: 100vh;
+    box-sizing: border-box;
+    overflow-y: scroll; /* Allow vertical scrolling within main */
+    right: 35%;
+}
+    .square-button {
+        text-align: center;
+        justify-content: center;
+        align-items: center;
+        width: 260px;
+        height: 430px;
+        border-radius: 5px;
+        background-color: #ffffff;
+        color: rgb(0, 0, 0);
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 100px;
+        padding-bottom: 300px;
+        cursor: default;
+        
+    }
+
+.square-button img {
+    width: 200px;
+    height: 200px;
+    border-radius: 5px;
+    position: relative;
+    display: block;
+    top: -16%; /* Adjust the top position */
+    left: 10%; /* Center the image horizontally */
+}
+
+.square-button p {
+    text-align: block;
+    margin-top: 350px;
+    font-size: 5px;
+    border-radius: 0px;
+    position: relative;
+    top: 7%; /* Adjust the top position */
+    left: -210%; /* Center the image horizontally */
+}
+
+.square-button h1 {
+    text-align: center;
+    margin-top: -15px;
+    font-size: 12px;
+    position: relative;
+    top: -8%; /* Adjust the top position */
+    left: -210%; /* Center the image horizontally */
+}
+
+.square-button h2 {
+    text-align: center;
+    margin-top: 1px;
+    font-size: 18px;
+    position: relative;
+    top: -10%; /* Adjust the top position */
+    left: -210%; /* Center the image horizontally */
+}
+.square-button p1 {
+    
+    display: block;
+    text-align: left;
+    margin-top: 1px;
+    font-size: 18px;
+    position: relative;
+    top: -110%; /* Adjust the top position */
+    left: -20%; /* Center the image horizontally */
+    width: 150%; /* Adjust the width as needed */
+
+}
+.square-button1 {
+    margin-top: 5%;
+    margin-left: 11%;
+}
+header a {
+    text-decoration: none;
+    align-items: center;  /* Vertical centering */
+    color: rgba(0, 0, 0, 0);
+    font-size: 00px;
+    margin-top: 0px;
+    display: block;
+    padding: 0px 0px;
+    background-color: hsla(0, 0%, 100%, 0);
+    border-radius: 2px;
+    transition: background-color 0.3s ease;
+    position: fixed;
+    right: 0%;
+    top: 0%;
+
+}
+
+}
+
+body {
+    overflow: hidden;
+}
